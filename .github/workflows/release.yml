@@ -54,11 +54,11 @@ jobs:
           gpg --keyserver keys.openpgp.org --send-keys $KEY_ID || true
           
           # Sleep to allow keyservers to synchronize
-          sleep 15
+          sleep 60
         
       - name: Publish Package to Maven Central
         run: |
-          mvn clean deploy -B \
+          mvn clean deploy -B -X \
             -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn \
             -Dgpg.passphrase="temporarypassphrase"
         env:
