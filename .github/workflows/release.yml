@@ -40,6 +40,11 @@ jobs:
           # Generate GPG key
           gpg --batch --generate-key gpg-batch.txt
           
+          # Configure GPG agent for loopback pinentry (critical for headless environments)
+          mkdir -p ~/.gnupg
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          gpg-connect-agent reloadagent /bye
+          
           # Find GPG Key ID
           KEY_ID=$(gpg --list-keys --keyid-format LONG | grep 'pub' | awk '{print $2}' | cut -d'/' -f2)
           echo "Generated Key ID: $KEY_ID"
