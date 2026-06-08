@@ -23,7 +23,7 @@ Add the dependency to your [pom.xml](file:///Users/amf0930/Downloads/cairovolt-l
 
 ```xml
 <dependency>
-    <groupId>com.cairovolt</groupId>
+    <groupId>io.github.abdullahcairovolt-rgb</groupId>
     <artifactId>woocommerce-validator</artifactId>
     <version>1.0.0</version>
 </dependency>
