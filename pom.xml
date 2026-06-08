@@ -32,8 +32,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/abdullahcairovolt-rgb/woocommerce-validator.git</connection>
-        <developerConnection>scm:git:ssh://github.com:abdullahcairovolt-rgb/woocommerce-validator.git</developerConnection>
+        <connection>scm:git:https://github.com/abdullahcairovolt-rgb/woocommerce-validator.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/abdullahcairovolt-rgb/woocommerce-validator.git</developerConnection>
         <url>https://github.com/abdullahcairovolt-rgb/woocommerce-validator/tree/main</url>
     </scm>
 
